@@ -22,6 +22,8 @@ export default function Home() {
 				...prevData,
 				[value]: counter,
 			}));
+
+			e.currentTarget.value = "";
 		}
 	};
 
