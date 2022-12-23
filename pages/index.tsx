@@ -38,7 +38,7 @@ export default function Home() {
 	};
 
 	return (
-		<div className="text-4xl">
+		<div className="flex flex-row items-center justify-center h-screen gap-10 text-4xl">
 			<div className="flex items-center justify-center gap-4">
 				<div className="max-w-7xl">
 					<input
@@ -50,7 +50,7 @@ export default function Home() {
 				</div>
 				<div>{counter}</div>
 			</div>
-			<div className="h-screen flex items-center justify-center gap-4">
+			<div className="overflow-auto max-h-[50vh] flex items-center justify-center gap-4">
 				<div className="max-w-7xl">
 					{Object.keys(data).map((item) => (
 						<div key={item} className="text-black text-4xl flex flex-row gap-4">
